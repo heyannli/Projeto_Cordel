@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Viaoda+Libre&family=Zain:wght@300;400;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +9,7 @@
 }
 html, body {
     min-height: 100vh;
+    font-family: var(--text-generico);
 }
 
 :root {
@@ -14,19 +17,24 @@ html, body {
     --clr-branco: #EFE9C6;
     --clr-link: #cd9b59;
     --clr-link-ativo: #963f2e;
+
+    --text-paragrafo: "Zain", sans-serif;
+    --text-titulo: "Viaoda Libre", serif; 
+    --text-generico: "Nanum Myeongjo", serif;
 }
 
 header {
     background-color: var(--clr-escuro);
     color: var(--clr-branco);
     text-align: center;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 header h1 {
     padding-top: 50px;
     font-variant: small-caps;
-    font-size: 2.5rem;
+    font-size: 10vw;
+    font-family: var(--text-titulo);
 }
 
 header p {
@@ -47,9 +55,11 @@ a:visited, a:hover {
 
 section {
     padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-bottom: 12vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--text-paragrafo);
+    font-size: 3vw;
 }
 
 section.normal {
@@ -63,8 +73,9 @@ section.imagem {
 }
 
 section.imagem p {
-    background-color: var(--clr-escuro);
+    background-color: var(--clr-link);
     width: 40%;
+    padding: 8px;
 }
 
 
